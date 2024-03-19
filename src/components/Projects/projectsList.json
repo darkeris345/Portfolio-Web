@@ -1,0 +1,28 @@
+[
+    {
+        "name": "Movie App",
+        "description": "Movie App",
+        "url": "https://url1.com",
+        "gif": "src/assets/projectsGif/MovieApp.gif",
+        "github": "https://github.com/darkeris345/Movies-List-FE",
+        "deploy": "https://darkeris345-movies-list.vercel.app/"
+    },
+    {
+        "name": "Task List",
+        "description": "Project 2 description",
+        "url": "https://url2.com",
+        "gif": "../assets/projectsGif/project2.gif"
+    },
+    {
+        "name": "Pay Api",
+        "description": "Project 3 description",
+        "url": "https://url3.com",
+        "gif": "../../assets/projectsGif/project3.gif"
+    },
+    {
+        "name": "Project 4",
+        "description": "Project 4 description",
+        "url": "https://url4.com",
+        "gif": "../../assets/projectsGif/project4.gif"
+    }
+]

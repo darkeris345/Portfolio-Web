@@ -11,15 +11,16 @@ import "./App.scss";
 const App: React.FC = () => {
  
   return (
+    <>
     <div className="App">
       <Header />
       <About  />
       <Projects />
       <Skills />
       <Contact />
-      <Footer />
-      
     </div>
+      <Footer />
+    </>
   );
 };
 

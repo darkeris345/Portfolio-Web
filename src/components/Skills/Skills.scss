@@ -1,0 +1,19 @@
+#skills {
+    padding: 20px;
+}
+
+.icons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+    
+
+    svg {
+        width: 80px;
+        height: 80px;
+
+        :hover {
+            color: rgb(122, 4, 4);
+        }
+    }
+}
