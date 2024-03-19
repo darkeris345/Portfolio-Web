@@ -5,16 +5,16 @@ import './Skills.scss';
 
 const Skills: React.FC = () => {
   return (
-    <div id="skills" className="m-5 ">
+    <div id="skills" className="m-5 container">
       <h2 className='mb-5'>My Skills</h2>
       <div className="icons-grid">
         <FaReact />
         <SiTypescript />
+        <FaNodeJs />
         <FaHtml5 />
         <FaCss3Alt />
         <FaSass />
         <FaJs />
-        <FaNodeJs />
         <SiNestjs />
       </div>
     </div>
