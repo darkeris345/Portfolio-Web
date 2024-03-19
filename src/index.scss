@@ -1,0 +1,12 @@
+@import "../node_modules/nes.css/css/nes-core.min.css";
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+@import url('https://unpkg.com/nes.css/css/nes.css');
+
+html, body, pre, code, kbd, samp {
+    font-family: "Press Start 2P", cursive;
+}
+
+body{
+    background-color: black;
+}
