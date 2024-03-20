@@ -5,12 +5,13 @@ import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import GetUp from "./GetUp";
 
+
 const Header: React.FC = () => {
   return (
     <>
       <Navbar expand={"lg"} className="bg-body-tertiary mb-3 p-4">
         <Container fluid>
-          <Navbar.Brand href="#">Logo</Navbar.Brand>
+          <Navbar.Brand href="#">Portfolio</Navbar.Brand>
           <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-lg`} />
           <Navbar.Offcanvas
             id={`offcanvasNavbar-expand-lg`}
@@ -19,7 +20,7 @@ const Header: React.FC = () => {
           >
             <Offcanvas.Header closeButton>
               <Offcanvas.Title id={`offcanvasNavbarLabel-expand-lg`}>
-                Offcanvas
+                Portfolio WEB
               </Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>

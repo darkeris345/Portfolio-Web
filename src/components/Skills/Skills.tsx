@@ -14,9 +14,9 @@ const Skills: React.FC = () => {
   return (
     <div
       id="skills"
-      className="m-5 skills d-flex flex-column justify-content-center "
+      className="m-5 skills"
     >
-      <h2 className="mb-5">My Skills</h2>
+      <h2 className="mb-5">My Tech Stack</h2>
       <div className="icons-grid">
         <FaReact />
         <SiTypescript />

@@ -15,17 +15,20 @@ const Projects: React.FC = () => {
   return (
     <div id="projects" className="projects m-5">
       <h2 className="mb-5">My Projects:</h2>
-      <Row xs={1} md={3} className="g-4">
+      <Row xs={1} md={2} lg={3} className="g-4">
         {projectsList.map((project, index) => (
           <Col key={index}>
-            <div className="nes-container with-title is-centered project" style={{ height: "300px" }}>
-              <p className="title">{project.name}</p>
-              <p>{project.description}</p>
-              <div className="d-flex justify-content-center align-items-">
+            <div className="nes-container with-title is-centered project" style={{ width: "100%", minHeight: "300px", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
+              <div>
+                <p className="title">{project.name}</p>
+                <p>{project.description}</p>
+              </div>
+              <div className="d-flex justify-content-center align-items-center mb-3">
                 <Button
                   variant="primary"
                   onClick={() => openModal(project.gif)}
-                  disabled={project.done ? false : true}
+                  disabled={!project.done}
+                  className="nes-btn is-primary me-2"
                 >
                   View
                 </Button>
@@ -34,7 +37,8 @@ const Projects: React.FC = () => {
                   href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  disabled={project.done ? false : true}
+                  disabled={!project.done}
+                  className="me-2"
                 >
                   Source
                 </Button>
@@ -43,7 +47,7 @@ const Projects: React.FC = () => {
                   href={project.deploy}
                   target="_blank"
                   rel="noopener noreferrer"
-                  disabled={project.done ? false : true}
+                  disabled={!project.done}
                 >
                   Live
                 </Button>
