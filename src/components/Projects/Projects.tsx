@@ -2,13 +2,24 @@ import React, { useState } from "react";
 import projectsList from "../../components/Projects/projectsList.json";
 import { Button, Modal, Row, Col } from "react-bootstrap";
 import "./Projects.scss";
+import MovieAppGif from "../../assets/projectsGif/MovieApp.gif";
+import TaskListGif from "../../assets/projectsGif/TaskList.gif";
+import WinterProjectGif from "../../assets/projectsGif/Winter-project.gif";
+
+type Project = {
+  name: string;
+  description: string;
+  github: string;
+  deploy: string;
+  done: boolean;
+};
 
 const Projects: React.FC = () => {
   const [showModal, setShowModal] = useState(false);
-  const [gifUrl, setGifUrl] = useState("");
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
-  const openModal = (gif: string) => {
-    setGifUrl(gif);
+  const openModal = (project: Project) => {
+    setSelectedProject(project);
     setShowModal(true);
   };
 
@@ -34,7 +45,7 @@ const Projects: React.FC = () => {
               </div>
               <div className="d-flex justify-content-center align-items-center mb-3">
                 <Button
-                  onClick={() => openModal(project.gif)}
+                  onClick={() => openModal(project)}
                   className={
                     !project.done
                       ? "nes-btn is-disabled"
@@ -74,7 +85,21 @@ const Projects: React.FC = () => {
           <Modal.Title>Project GIF</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <img src={gifUrl} alt="project gif" className="img-fluid" />
+          {selectedProject && (
+            <img
+              src={
+                selectedProject.name === "Movie App"
+                  ? MovieAppGif
+                  : selectedProject.name === "Task List"
+                  ? TaskListGif
+                  : selectedProject.name === "Pay Api"
+                  ? WinterProjectGif
+                  : ""
+              }
+              alt="project gif"
+              className="img-fluid"
+            />
+          )}
         </Modal.Body>
       </Modal>
     </div>

@@ -1,48 +1,44 @@
 [
-    {
-        "name": "Movie App",
-        "description": "A Movie List application for browsing and managing your favorite movies, you can add movies to your favorite list and remove them.",
-        "gif": "src/assets/projectsGif/MovieApp.gif",
-        "github": "https://github.com/darkeris345/Movies-List-FE",
-        "deploy": "https://darkeris345-movies-list.vercel.app/",
-        "done": true
-
-    },
-    {
-        "name": "Task List",
-        "description": "Simple to-do list application made with React and Express.js. Users can add, edit, and remove tasks from the list.",
-        "gif": "https://giphy.com/gifs/PBoOu92jpnL9ewkLCv",
-        "github": "https://github.com/darkeris345/Task-List-FE",
-        "deploy": "https://task-list-oy5d5q7lj-darkeris345s-projects.vercel.app/",
-        "done": true
-    },
-    {
-        "name": "Pay Api",
-        "description": "Website for imaginary company. The website is designed to be compatible with mobile, tablet, and desktop devices.",
-        "gif": "src/assets/projectsGif/Winter-project.gif",
-        "github": "https://github.com/darkeris345/Winter-project-KOUDERIAI",
-        "deploy": "https://winter-project-kouderiai.vercel.app/",
-        "done": true
-    },
-    {
-        "name": "To be continued...",
-        "description": "In progress...",
-        "url": "https://url4.com",
-        "gif": "../../assets/projectsGif/project4.gif",
-        "done": false
-    },
-    {
-        "name": "To be continued...",
-        "description": "In progress...",
-        "url": "https://url4.com",
-        "gif": "../../assets/projectsGif/project4.gif",
-        "done": false
-    },
-    {
-        "name": "To be continued...",
-        "description": "In progress...",
-        "url": "https://url4.com",
-        "gif": "../../assets/projectsGif/project4.gif",
-        "done": false
-    }
+  {
+    "name": "Movie App",
+    "description": "A Movie List application for browsing and managing your favorite movies, you can add movies to your favorite list and remove them.",
+    "github": "https://github.com/darkeris345/Movies-List-FE",
+    "deploy": "https://darkeris345-movies-list.vercel.app/",
+    "done": true
+  },
+  {
+    "name": "Task List",
+    "description": "Simple to-do list application made with React and Express.js. Users can add, edit, and remove tasks from the list.",
+    "github": "https://github.com/darkeris345/Task-List-FE",
+    "deploy": "https://task-list-oy5d5q7lj-darkeris345s-projects.vercel.app/",
+    "done": true
+  },
+  {
+    "name": "Pay Api",
+    "description": "Website for imaginary company. The website is designed to be compatible with mobile, tablet, and desktop devices.",
+    "github": "https://github.com/darkeris345/Winter-project-KOUDERIAI",
+    "deploy": "https://winter-project-kouderiai.vercel.app/",
+    "done": true
+  },
+  {
+    "name": "To be continued...",
+    "description": "In progress...",
+    "github": "https://github.com/darkeris345/Winter-project-KOUDERIAI",
+    "deploy": "https://winter-project-kouderiai.vercel.app/",
+    "done": false
+  },
+  {
+    "name": "To be continued...",
+    "description": "In progress...",
+    "github": "https://github.com/darkeris345/Winter-project-KOUDERIAI",
+    "deploy": "https://winter-project-kouderiai.vercel.app/",
+    "done": false
+  },
+  {
+    "name": "To be continued...",
+    "description": "In progress...",
+    "github": "https://github.com/darkeris345/Winter-project-KOUDERIAI",
+    "deploy": "https://winter-project-kouderiai.vercel.app/",
+    "done": false
+  }
 ]
