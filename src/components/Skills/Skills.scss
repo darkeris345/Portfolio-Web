@@ -1,36 +1,43 @@
-.icons-grid {
+.skills {
     display: grid;
-    grid-template-columns: repeat(8, minmax(80px, 1fr));
-    gap: 20px;
-
-    svg {
+    flex-direction: column;
+  
+    h2 {
+      margin-bottom: 30px;
+      text-align: start;
+    }
+  
+    .icons-grid {
+      display: grid;
+      grid-template-columns: repeat(8, minmax(80px, 1fr));
+      gap: 20px;
+  
+      svg {
         width: 80px;
         height: 80px;
         transition: transform 0.3s ease-in-out;
-
-        :hover {
-            color: rgb(122, 4, 4);
+  
+        &:hover {
+          color: rgb(122, 4, 4);
         }
+      }
     }
-}
-
-@media screen and (max-width: 1024px) {
-    .icons-grid {
-        grid-template-columns: repeat(6, minmax(80px, 1fr));
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .skills .icons-grid {
+      grid-template-columns: repeat(6, minmax(80px, 1fr));
     }
-    
-}
-
-@media screen and (max-width: 768px) {
-    .icons-grid {
-        grid-template-columns: repeat(4, minmax(80px, 1fr));
+  }
+  
+  @media screen and (max-width: 768px) {
+    .skills .icons-grid {
+      grid-template-columns: repeat(4, minmax(80px, 1fr));
     }
-    
-}
-
-@media screen and (max-width: 480px) {
-    .icons-grid {
-        grid-template-columns: repeat(2, minmax(80px, 1fr));
+  }
+  
+  @media screen and (max-width: 480px) {
+    .skills .icons-grid {
+      grid-template-columns: repeat(2, minmax(80px, 1fr));
     }
-    
-}
+  }

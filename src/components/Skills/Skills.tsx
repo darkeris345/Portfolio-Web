@@ -17,7 +17,7 @@ const Skills: React.FC = () => {
       className="m-5 skills"
     >
       <h2 className="mb-5">My Tech Stack</h2>
-      <div className="icons-grid">
+      <div className="icons-grid nes-balloon nes-pointer img-fluid">
         <FaReact />
         <SiTypescript />
         <FaNodeJs />

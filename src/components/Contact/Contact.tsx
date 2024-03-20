@@ -39,7 +39,7 @@ const Contact: React.FC = () => {
                 href="mailto:dmitrij.purynzin@gmail.com"
                 className="contact-icon"
               >
-                <FontAwesomeIcon icon={faEnvelope} size="3x" className="mx-5" />
+                <FontAwesomeIcon icon={faEnvelope} size="3x" className="mx-5"/>
               </a>
               <span className="nes-text">dmitrij.purynzin@gmail.com</span>
             </div>
