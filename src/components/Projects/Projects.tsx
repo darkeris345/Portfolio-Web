@@ -34,6 +34,7 @@ const Projects: React.FC = () => {
               style={{
                 width: "100%",
                 minHeight: "300px",
+                minWidth: "375px",
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "space-between",
@@ -45,7 +46,7 @@ const Projects: React.FC = () => {
               </div>
               <div className="d-flex justify-content-center align-items-center mb-3">
                 <Button
-                  onClick={() => openModal(project)}
+                  onClick={project.done ? () => openModal(project) : undefined}
                   className={
                     !project.done
                       ? "nes-btn is-disabled"
