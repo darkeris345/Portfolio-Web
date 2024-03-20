@@ -11,7 +11,7 @@
     {
         "name": "Task List",
         "description": "Simple to-do list application made with React and Express.js. Users can add, edit, and remove tasks from the list.",
-        "gif": "src/assets/projectsGif/TaskList.gif",
+        "gif": "https://giphy.com/gifs/PBoOu92jpnL9ewkLCv",
         "github": "https://github.com/darkeris345/Task-List-FE",
         "deploy": "https://task-list-oy5d5q7lj-darkeris345s-projects.vercel.app/",
         "done": true
