@@ -18,27 +18,39 @@ const Projects: React.FC = () => {
       <Row xs={1} md={2} lg={3} className="g-4">
         {projectsList.map((project, index) => (
           <Col key={index}>
-            <div className="nes-container with-title is-centered project" style={{ width: "100%", minHeight: "300px", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
+            <div
+              className="nes-container with-title is-centered project"
+              style={{
+                width: "100%",
+                minHeight: "300px",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "space-between",
+              }}
+            >
               <div>
                 <p className="title">{project.name}</p>
                 <p>{project.description}</p>
               </div>
               <div className="d-flex justify-content-center align-items-center mb-3">
                 <Button
-                  variant="primary"
                   onClick={() => openModal(project.gif)}
-                  disabled={!project.done}
-                  className="nes-btn is-primary me-2"
+                  className={
+                    !project.done
+                      ? "nes-btn is-disabled"
+                      : "nes-btn is-primary me-2"
+                  }
                 >
                   View
                 </Button>
                 <Button
-                  variant="secondary"
                   href={project.github}
                   target="_blank"
-                  rel="noopener noreferrer"
-                  disabled={!project.done}
-                  className="me-2"
+                  className={
+                    !project.done
+                      ? "nes-btn is-disabled"
+                      : "nes-btn is-warning me-2"
+                  }
                 >
                   Source
                 </Button>
@@ -46,8 +58,9 @@ const Projects: React.FC = () => {
                   variant="success"
                   href={project.deploy}
                   target="_blank"
-                  rel="noopener noreferrer"
-                  disabled={!project.done}
+                  className={
+                    !project.done ? "nes-btn is-disabled" : "nes-btn is-success"
+                  }
                 >
                   Live
                 </Button>
