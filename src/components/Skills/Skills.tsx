@@ -40,7 +40,7 @@ const Skills: React.FC = () => {
   return (
     <div id="skills" className="mx-5 skills">
       <h2 className="skillsHeader">My Tech Stack</h2>
-      <div className="icons-grid nes-balloon">
+      <div className="icons-grid nes-balloon nes-pointer">
         {skills.map((skill, index) => (
           <div key={index} className="skill-item">
             <div className="icon">{skill.icon}</div>
