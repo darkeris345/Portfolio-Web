@@ -6,7 +6,7 @@ import Typewriter from "typewriter-effect";
 
 const About: React.FC = () => {
   return (
-    <div className="css-typing m-5" id="about">
+    <div className="css-typing" id="about">
       <img src={picture} alt="avatar" className="avatar" />
       <h5 className="mb-4">Hello! My name is</h5>
       <div className="typewriter-container">
