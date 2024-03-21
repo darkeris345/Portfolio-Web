@@ -24,7 +24,7 @@ const Projects: React.FC = () => {
   };
 
   return (
-    <div id="projects" className="projects m-5">
+    <div id="projects" className={`projects m-5`}>
       <h2 className="projectsHeader">My Projects:</h2>
       <Row xs={1} md={2} lg={3} className="g-4">
         {projectsList.map((project, index) => (
@@ -32,7 +32,7 @@ const Projects: React.FC = () => {
             <div
               className="nes-container with-title is-centered project"
               style={{
-                minHeight: "320px",
+                minHeight: "325px",
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "space-between",
