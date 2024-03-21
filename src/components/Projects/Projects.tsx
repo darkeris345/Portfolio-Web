@@ -4,6 +4,7 @@ import { Button, Modal, Row, Col } from "react-bootstrap";
 import MovieAppGif from "../../assets/projectsGif/MovieApp.gif";
 import TaskListGif from "../../assets/projectsGif/TaskList.gif";
 import WinterProjectGif from "../../assets/projectsGif/Winter-project.gif";
+import "./Projects.scss";
 
 type Project = {
   name: string;
@@ -24,14 +25,13 @@ const Projects: React.FC = () => {
 
   return (
     <div id="projects" className="projects m-5">
-      <h2 className="mb-5">My Projects:</h2>
+      <h2 className="projectsHeader">My Projects:</h2>
       <Row xs={1} md={2} lg={3} className="g-4">
         {projectsList.map((project, index) => (
           <Col key={index}>
             <div
               className="nes-container with-title is-centered project"
               style={{
-                width: "100%",
                 minHeight: "320px",
                 display: "flex",
                 flexDirection: "column",
@@ -51,8 +51,9 @@ const Projects: React.FC = () => {
                     className={
                       !project.done
                         ? "nes-btn is-disabled"
-                        : "nes-btn is-primary me-md-2 me-lg-2"
+                        : "nes-btn is-primary"
                     }
+                    
                   >
                     View
                   </Button>
@@ -63,16 +64,16 @@ const Projects: React.FC = () => {
                     target="_blank"
                     className={
                       !project.done
-                        ? "nes-btn is-disabled"
-                        : "nes-btn is-warning me-md-2 me-lg-2"
+                        ? "nes-btn is-disabled small"
+                        : "nes-btn is-warning small"
                     }
+                    
                   >
-                    Source
+                    Code
                   </Button>
                 </Col>
                 <Col>
                   <Button
-                    variant="success"
                     href={project.deploy}
                     target="_blank"
                     className={

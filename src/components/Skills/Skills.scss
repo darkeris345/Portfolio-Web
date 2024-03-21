@@ -1,43 +1,66 @@
+.skillsHeader{
+  margin-top: 5rem;
+}
+
 .skills {
+  display: grid;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+
+  h2 {
+    margin-bottom: 30px;
+    text-align: start;
+  }
+
+  .icons-grid {
     display: grid;
-    flex-direction: column;
-  
-    h2 {
-      margin-bottom: 30px;
-      text-align: start;
-    }
-  
-    .icons-grid {
-      display: grid;
-      grid-template-columns: repeat(8, minmax(80px, 1fr));
-      gap: 20px;
-  
-      svg {
-        width: 80px;
-        height: 80px;
-        transition: transform 0.3s ease-in-out;
-  
-        &:hover {
-          color: rgb(122, 4, 4);
-        }
+    grid-template-columns: repeat(5, minmax(220px, 1fr));
+    gap: 20px;
+
+    .skill-item {
+      text-align: center;
+
+      .icon {
+        font-size: 50px;
+        margin-bottom: 10px;
+      }
+
+      .name {
+        font-weight: bold;
+        margin-bottom: 5px;
       }
     }
-  }
-  
-  @media screen and (max-width: 1024px) {
-    .skills .icons-grid {
-      grid-template-columns: repeat(6, minmax(80px, 1fr));
+
+    progress {
+      width: 100%;
+      margin-top: 10px;
+      border: 3px dashed black;
+      
     }
   }
-  
-  @media screen and (max-width: 768px) {
-    .skills .icons-grid {
-      grid-template-columns: repeat(4, minmax(80px, 1fr));
+
+  @media screen and (max-width: 1412px) {
+    .icons-grid {
+      grid-template-columns: repeat(4, minmax(220px, 1fr));
     }
   }
-  
-  @media screen and (max-width: 480px) {
-    .skills .icons-grid {
-      grid-template-columns: repeat(2, minmax(80px, 1fr));
+
+  @media screen and (max-width: 1130px) {
+    .icons-grid {
+      grid-template-columns: repeat(3, minmax(220px, 1fr));
     }
   }
+
+  @media screen and (max-width: 860px) {
+    .icons-grid {
+      grid-template-columns: repeat(2, minmax(220px, 1fr));
+    }
+  }
+  @media screen and (max-width: 640px) {
+    .icons-grid {
+      grid-template-columns: repeat(1, minmax(220px, 1fr));
+    }
+  }
+}
+
