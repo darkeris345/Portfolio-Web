@@ -3,6 +3,16 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    .project{
+        margin-bottom: 1rem;
+        max-width: 450px;
+        .description {
+            max-height: 150px;
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
+           
+        }
+    }
 }
 
 .projectsHeader {

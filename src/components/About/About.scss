@@ -26,3 +26,16 @@
   font-size: 36px;
   color: #18248f;
 }
+
+@media screen and (max-width: 620px) {
+  .css-typing {
+    height: auto;
+    padding-left: 30px;
+    .typewriter-container {
+      font-size: 24px;
+    }
+  }
+
+
+  
+}

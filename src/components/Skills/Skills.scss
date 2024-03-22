@@ -1,5 +1,6 @@
 .skillsHeader {
   margin-top: 5rem;
+  margin-left: 1rem;
 }
 
 .skills {
@@ -7,6 +8,7 @@
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
+  margin: 1rem 4rem;
 
   h2 {
     margin-bottom: 30px;
@@ -44,30 +46,39 @@
     }
 
   }
-
+  
   @media screen and (max-width: 1412px) {
     .icons-grid {
       grid-template-columns: repeat(4, minmax(220px, 1fr));
     }
   }
-
+  
   @media screen and (max-width: 1130px) {
     .icons-grid {
       grid-template-columns: repeat(3, minmax(220px, 1fr));
     }
   }
-
+  
   @media screen and (max-width: 860px) {
     .icons-grid {
       grid-template-columns: repeat(2, minmax(220px, 1fr));
     }
   }
-
+  
   @media screen and (max-width: 640px) {
     .icons-grid {
       grid-template-columns: repeat(1, minmax(220px, 1fr));
     }
+  
   }
+}
+
+@media screen and (max-width: 375px) {
+  .skills{
+    padding: 0;
+    margin: 0;
+  }
+  
 }
 
 .skill-item:hover {

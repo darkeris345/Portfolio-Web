@@ -1,10 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import projectsList from "../../components/Projects/projectsList.json";
 import { Button, Modal, Row, Col } from "react-bootstrap";
 import MovieAppGif from "../../assets/projectsGif/MovieApp.gif";
 import TaskListGif from "../../assets/projectsGif/TaskList.gif";
 import WinterProjectGif from "../../assets/projectsGif/Winter-project.gif";
 import "./Projects.scss";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 type Project = {
   name: string;
@@ -15,32 +18,48 @@ type Project = {
 };
 
 const Projects: React.FC = () => {
+
   const [showModal, setShowModal] = useState(false);
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
   const openModal = (project: Project) => {
     setSelectedProject(project);
     setShowModal(true);
   };
 
+  
+
   return (
-    <div id="projects" className={`projects m-5`}>
+    <div
+      id="projects"
+      className={`projects m-5`}
+      
+      
+    >
       <h2 className="projectsHeader">My Projects:</h2>
       <Row xs={1} md={2} lg={3} className="g-4">
         {projectsList.map((project, index) => (
           <Col key={index}>
             <div
               className="nes-container with-title is-centered project"
+              data-aos="fade-up"
+              data-aos-delay={index * 150}
+              data-aos-duration="1000"
               style={{
-                minHeight: "325px",
+                minHeight: "320px",
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "space-between",
+    
               }}
             >
               <div>
                 <p className="title">{project.name}</p>
-                <p>{project.description}</p>
+                <p className="description">{project.description}</p>
               </div>
               <Row className="mb-3">
                 <Col>
@@ -53,7 +72,6 @@ const Projects: React.FC = () => {
                         ? "nes-btn is-disabled"
                         : "nes-btn is-primary"
                     }
-                    
                   >
                     View
                   </Button>
@@ -67,7 +85,6 @@ const Projects: React.FC = () => {
                         ? "nes-btn is-disabled small"
                         : "nes-btn is-warning small"
                     }
-                    
                   >
                     Code
                   </Button>

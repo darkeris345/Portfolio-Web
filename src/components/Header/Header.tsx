@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
-import GetUp from "./GetUp";
+// import GetUp from "./GetUp";
 
 const Header: React.FC = () => {
   const [showOffcanvas, setShowOffcanvas] = useState(false);
@@ -45,7 +45,7 @@ const Header: React.FC = () => {
           </Navbar.Offcanvas>
         </Container>
       </Navbar>
-      <GetUp />
+      {/* <GetUp /> */}
     </>
   );
 };

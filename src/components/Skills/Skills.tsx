@@ -7,10 +7,13 @@ import {
   FaNodeJs,
   FaSass,
   FaBootstrap,
-  FaDatabase
+  FaDatabase,
 } from "react-icons/fa";
 import { SiTypescript, SiNestjs, SiMysql } from "react-icons/si";
 import "./Skills.scss";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Skills: React.FC = () => {
   const skills = [
@@ -24,7 +27,7 @@ const Skills: React.FC = () => {
     { icon: <SiNestjs />, name: "Nest.js", progress: 30 },
     { icon: <FaBootstrap />, name: "Bootstrap", progress: 90 },
     { icon: <FaDatabase />, name: "MongoDB", progress: 60 },
-    { icon: <SiMysql />, name: "MySQL", progress: 35 }
+    { icon: <SiMysql />, name: "MySQL", progress: 35 },
   ];
 
   const getProgressColor = (progress: number) => {
@@ -37,12 +40,22 @@ const Skills: React.FC = () => {
     }
   };
 
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
-    <div id="skills" className="mx-5 skills">
+    <div id="skills" className="skills">
       <h2 className="skillsHeader">My Tech Stack</h2>
       <div className="icons-grid nes-balloon nes-pointer">
         {skills.map((skill, index) => (
-          <div key={index} className="skill-item">
+          <div
+            key={index}
+            className="skill-item"
+            data-aos="zoom-in-up"
+            data-aos-delay={index * 100}
+            data-aos-duration="1000"
+          >
             <div className="icon">{skill.icon}</div>
             <div className="name">{skill.name}</div>
             <progress

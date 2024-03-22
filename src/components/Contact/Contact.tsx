@@ -38,10 +38,10 @@ const Contact: React.FC = () => {
       <div className="d-flex justify-content-center">
         <div className="nes-balloon nes-pointer img-fluid">
           <p className="mt-4">Have any questions?</p>
-          <p>You can reach me easily by phone. My number is: +370 6757 6067</p>
+          <p>You can reach me easily by phone. My number is: +370 67 57 6067</p>
           <div className="icon-list d-flex flex-column">
             {contactMethods.map((method, index) => (
-              <div key={index} className="d-flex align-items-center">
+              <div key={index}>
                 <a
                   href={method.href}
                   target="_blank"
@@ -53,8 +53,8 @@ const Contact: React.FC = () => {
                     size="3x"
                     className="mx-5 my-3"
                   />
-                </a>
                 <span className="nes-text">{method.text}</span>
+                </a>
               </div>
             ))}
           </div>

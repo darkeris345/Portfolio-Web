@@ -1,7 +1,7 @@
 [
   {
     "name": "Movie App",
-    "description": "A Movie List application for browsing and managing your favorite movies, you can add movies to your favorite list and remove them.",
+    "description": "A Movie List application for browsing and managing your favorite movies.",
     "github": "https://github.com/darkeris345/Movies-List-FE",
     "deploy": "https://darkeris345-movies-list.vercel.app/",
     "done": true
