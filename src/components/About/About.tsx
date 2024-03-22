@@ -20,7 +20,7 @@ const About: React.FC = () => {
         <Typewriter
           onInit={(typewriter) => {
             typewriter
-              .pauseFor(4000)
+              .pauseFor(3000)
               .typeString("Dmitrij Purynzin")
               
               .start();
