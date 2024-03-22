@@ -14,20 +14,20 @@ const About: React.FC = () => {
   }, []);
   return (
     <div className="css-typing" id="about">
-      <img src={picture} alt="avatar" className="avatar" data-aos="zoom-out" data-aos-duration="1500" />
-      <h5 className="mb-4" data-aos="fade-left" data-aos-duration="1500">Hello! My name is</h5>
+      <img src={picture} alt="avatar" className="avatar" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="1500" />
+      <h5 className="mb-4" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="1500">Hello! My name is</h5>
       <div className="typewriter-container">
         <Typewriter
           onInit={(typewriter) => {
             typewriter
-              .pauseFor(2000)
+              .pauseFor(4000)
               .typeString("Dmitrij Purynzin")
               
               .start();
           }}
         />
       </div>
-      <h5 className="mt-4" data-aos="fade-right" data-aos-duration="1500">I'm a passionate Web Developer </h5>
+      <h5 className="mt-4" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="1500">I'm a passionate Web Developer </h5>
       <Button
         className="nes-btn is-primary"
         style={{ marginTop: "20px" }}
@@ -35,7 +35,7 @@ const About: React.FC = () => {
         target="_blank"
         data-aos="zoom-out-up"
         data-aos-duration="1500"
-        data-aos-delay="1000"
+        data-aos-delay="2500"
       >
         See My Resume
       </Button>
