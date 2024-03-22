@@ -31,11 +31,13 @@ const About: React.FC = () => {
       </h5>
       <div className="typewriter-container">
         <Typewriter
+        options={{
+          cursor: '|',
+        }}
           onInit={(typewriter) => {
             typewriter
               .pauseFor(3000)
               .typeString("Dmitrij Purynzin")
-
               .start();
           }}
         />

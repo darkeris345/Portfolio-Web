@@ -70,7 +70,7 @@ const Projects: React.FC = () => {
                     className={
                       !project.done
                         ? "nes-btn is-disabled"
-                        : "nes-btn is-primary"
+                        : "nes-btn is-primary nes-cursor"
                     }
                   >
                     View
