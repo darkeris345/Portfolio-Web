@@ -18,3 +18,12 @@
 .projectsHeader {
     margin: 2rem 0;
 }
+
+.project:hover{
+    box-shadow: 0 0 30px rgba(15, 6, 139, 0.4);
+
+    .title{
+        color: #18248f;
+    }
+
+}
