@@ -1,6 +1,6 @@
 import { Button } from "react-bootstrap";
 import "./About.scss";
-import pdf from "../../assets/resume/Dmitrij_Purynzin_resume.pdf";
+import pdf from "../../assets/resume/Dmitrij.pdf";
 import picture from "../../assets/pictures/skinmc-avatar.png";
 import Typewriter from "typewriter-effect";
 import AOS from "aos";
