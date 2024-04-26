@@ -41,7 +41,7 @@ const Projects: React.FC = () => {
       
     >
       <h2 className="projectsHeader">My Projects:</h2>
-      <Row xs={1} md={2} lg={3} className="g-4">
+      <Row xs={1} md={2} lg={3} xl={4} className="g-4">
         {projectsList.map((project, index) => (
           <Col key={index}>
             <div
@@ -49,11 +49,16 @@ const Projects: React.FC = () => {
               data-aos="fade-up"
               data-aos-delay={index * 150}
               data-aos-duration="1000"
-              style={{
-                minHeight: "320px",
+              style={{                
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "space-between",
+                alignItems: "center",
+                height: "100%",
+                padding: "20px",
+                backgroundColor: project.done ? "rgba(0, 0, 0, 0.2)" : "rgba(0, 0, 0, 0.1)",
+                borderRadius: "10px",
+                boxShadow: "0 0 10px rgba(0, 0, 0, 0.2)",
     
               }}
             >
@@ -72,6 +77,7 @@ const Projects: React.FC = () => {
                         ? "nes-btn is-disabled"
                         : "nes-btn is-primary nes-cursor"
                     }
+                    style={{ marginBottom: "10px" }}
                   >
                     View
                   </Button>

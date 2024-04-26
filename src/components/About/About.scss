@@ -8,28 +8,25 @@
 
 .avatar {
   border-radius: 1%;
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   object-fit: cover;
   margin-bottom: 20px;
   border: 5px solid #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
   background-image: url(../../assets/pictures/skinmc-avatar.png);
   background-size: 100%;
   background-repeat: no-repeat;
   &:hover {
-    background-image: url(../../assets/pictures/25042024-M.C-Dima_DSCF6963.png);
+    background-image: url(../../assets/pictures/25042024-M.C-Dima_DSCF6963.jpg);
     background-size: 100%;
-    
-    
-    transform: scale(1.5);
+    background-repeat: no-repeat;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
   }
 }
 
 .typewriter-container {
-  font-size: 36px;
+  font-size: 30px;
   color: #18248f;
   font-weight: bold;  
   cursor: ".";

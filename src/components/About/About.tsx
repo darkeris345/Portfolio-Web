@@ -36,7 +36,7 @@ const About: React.FC = () => {
         }}
           onInit={(typewriter) => {
             typewriter
-              .pauseFor(3000)
+              .pauseFor(2000)
               .typeString("Dmitrij Purynzin")
               .start();
           }}
