@@ -3,6 +3,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
+import "./Header.scss";
 // import GetUp from "./GetUp";
 
 const Header: React.FC = () => {
@@ -16,7 +17,7 @@ const Header: React.FC = () => {
 
   return (
     <>
-      <Navbar expand="lg" sticky="top" className="bg-body-tertiary mb-3 p-4">
+      <Navbar expand="lg" sticky="top" className="mb-3 p-4 bg-body-tertiary  navbarColour" >
         <Container fluid>
           <Navbar.Brand href="#">Portfolio</Navbar.Brand>
           <Navbar.Toggle

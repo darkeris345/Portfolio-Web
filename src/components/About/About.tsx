@@ -1,7 +1,7 @@
 import { Button } from "react-bootstrap";
 import "./About.scss";
 import pdf from "../../assets/resume/Dmitrij.pdf";
-import picture from "../../assets/pictures/skinmc-avatar.png";
+// import picture from "../../assets/pictures/skinmc-avatar.png";
 import Typewriter from "typewriter-effect";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -13,16 +13,16 @@ const About: React.FC = () => {
   }, []);
   return (
     <div className="css-typing" id="about">
-      <img
-        src={picture}
-        alt="avatar"
+      <div
+        // src={picture}
+        // alt="avatar"
         className="avatar"
         data-aos="zoom-out"
         data-aos-duration="1500"
         data-aos-delay="1500"
-      />
+      ></div>
       <h5
-        className="mb-4"
+        className="mb-4 text"
         data-aos="fade-left"
         data-aos-duration="1500"
         data-aos-delay="1500"
@@ -43,7 +43,7 @@ const About: React.FC = () => {
         />
       </div>
       <h5
-        className="mt-4"
+        className="mt-4 text"
         data-aos="fade-right"
         data-aos-duration="1500"
         data-aos-delay="1500"
