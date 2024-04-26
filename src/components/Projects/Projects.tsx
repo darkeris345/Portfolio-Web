@@ -49,6 +49,7 @@ const Projects: React.FC = () => {
               data-aos="fade-up"
               data-aos-delay={index * 150}
               data-aos-duration="1000"
+              data-aos-once="true"
               style={{                
                 display: "flex",
                 flexDirection: "column",

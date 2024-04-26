@@ -55,6 +55,7 @@ const Skills: React.FC = () => {
             data-aos="zoom-in-up"
             data-aos-delay={index * 100}
             data-aos-duration="1000"
+            data-aos-once="true"
           >
             <div className="icon">{skill.icon}</div>
             <div className="name">{skill.name}</div>

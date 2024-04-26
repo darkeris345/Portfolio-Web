@@ -20,12 +20,14 @@ const About: React.FC = () => {
         data-aos="zoom-out"
         data-aos-duration="1500"
         data-aos-delay="1500"
+        data-aos-once="true"
       ></div>
       <h5
         className="mb-4 text"
         data-aos="fade-left"
         data-aos-duration="1500"
         data-aos-delay="1500"
+        data-aos-once="true"
       >
         Hello! My name is
       </h5>
@@ -47,6 +49,7 @@ const About: React.FC = () => {
         data-aos="fade-right"
         data-aos-duration="1500"
         data-aos-delay="1500"
+        data-aos-once="true"
       >
         I'm a passionate Web Developer{" "}
       </h5>
@@ -57,7 +60,8 @@ const About: React.FC = () => {
         target="_blank"
         data-aos="zoom-out-up"
         data-aos-duration="1500"
-        data-aos-delay="2500"
+        data-aos-delay="2000"
+        data-aos-once="true"
       >
         See My Resume
       </Button>

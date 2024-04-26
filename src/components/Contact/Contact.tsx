@@ -44,15 +44,15 @@ const Contact: React.FC = () => {
       <h2 className="m-5">Contact</h2>
       <div className="d-flex justify-content-center">
         <div className="nes-balloon nes-pointer img-fluid">
-          <p className="mt-4 " data-aos="fade-up" data-aos-duration="1500">
+          <p className="mt-4 " data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
             Have any questions?
           </p>
-          <p data-aos="fade-up" data-aos-duration="1500">
+          <p data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
             You can reach me easily by phone. My number is: <span className="nes-text is-error" style={{textDecoration: "underline"}}>+370 67 57 6067</span>
           </p>
           <div className="icon-list d-flex flex-column">
             {contactMethods.map((method, index) => (
-              <div key={index} data-aos="fade-right" data-aos-duration="1500" data-aos-delay={index * 500}>
+              <div key={index} data-aos="fade-right" data-aos-duration="1000" data-aos-delay={index * 200} data-aos-once="true">
                 <a
                   href={method.href}
                   target="_blank"
